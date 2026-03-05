@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "BabyTrack",
+    "slug": "babytrack",
+    "description": "Track your baby's daily activities with beautiful, intuitive design",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "primaryColor": "#3B82F6",
+    "backgroundColor": "#ffffff",
+    "scheme": "babytrack",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.babytrack.app",
+      "buildNumber": "1",
+      "requireFullScreen": false,
+      "infoPlist": {
+        "CFBundleDisplayName": "BabyTrack",
+        "NSCameraUsageDescription": "This app uses the camera to take photos of baby activities",
+        "NSPhotoLibraryUsageDescription": "This app needs access to photo library to save activity photos"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.babytrack.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "name": "BabyTrack",
+      "shortName": "BabyTrack",
+      "lang": "en",
+      "scope": "/",
+      "themeColor": "#3B82F6"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": true
+          },
+          "android": {
+            "newArchEnabled": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "babytrack-production"
+      }
+    }
+  }
+}
